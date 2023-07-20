@@ -1,4 +1,4 @@
-const info = [
+const person_info = [
     {
         id: 1,
         firstName: "Magic",
@@ -22,9 +22,9 @@ const info = [
       }
 ] // initializing array of objects
 
-const full_name_array = info.map((obj)=>{   //sending each object as an argument to callback
-   const names = obj.firstName  +" "+ obj.lastName; //merging first and last names of objects together
-    return names  // return full name
+const full_name_array = person_info.map(info => {   //sending each object as an argument to callback
+   const full_name = info.firstName  +" "+ info.lastName; //merging first and last names of objects together
+    return full_name  // return full name
 });
 
 console.log(full_name_array);
