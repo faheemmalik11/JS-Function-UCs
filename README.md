@@ -6,6 +6,7 @@
 * [For In Loop](#for-in-loop)
 * [For Of Loop](#for-of-loop)
 * [For Loop](#for-loop)
+* [For each Loop](#for-each-loop)
 * [Every](#every)
 
 ## Map
@@ -116,6 +117,22 @@ Let's say you have to perform a tasks repeatedy. For exmaple, you want to write 
 
 For loops can also be used to filter and manipulate data. For example, let's say you have an array of numbers and you want to square them. It is easy to do with for loop as you can just multiply each element by itself and made a new array. 
 
+## For each Loop
+
+forEach loop is a javascript function that takes a function as parameter and the function takes the element of array as its first argument, index as second argument and array as third but second and third arguments are optional. There's also another option argument that foreach loop takes is thisArg. It is a value that can be accessed inside the loop. forEach does not return anything; it simply iterates over the array and executes the provided callback function for each element.
+
+
+1. Data processing
+
+forEach can be used to process and transform data that is coming to it through the array. For example, if there's an array of celsius temperatures and you want to transform it to fahrenheit, you can do this using forEach by converting each element to fahrenheit through callback function.
+
+2. Performing asynchronous operations
+
+forEach loops can be used in performing asynchronous operations or promises. For Example, you have an array of url which want to first fetch and then you want to show response or data. You can do this by using forEach for each url.
+
+3. Manipulation of array
+
+You can also use forEach function to manipulate each element of the array and perform a specific function on it. Like you want to multiply 2 with each element of the array. You can do this by using forEach.
 
 ## every
 
@@ -133,3 +150,6 @@ We can also use every function to perform validation. Let's say you have made a 
 3. Permission
 
 every() can be used to check all the required permissions. Let's say a you have defined the required permission as read, write and now a user comes with permissions read, write and delete. SO now every() would check if user has the required permissions and return true if he/she has the required permissions.
+
+
+
