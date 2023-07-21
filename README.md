@@ -5,7 +5,8 @@
 * [Filter](#filter)
 * [For In Loop](#for-in-loop)
 * [For Of Loop](#for-of-loop)
-
+* [For Loop](#for-loop)
+* [Every](#every)
 
 ## Map
 
@@ -98,3 +99,37 @@ Another use case of for of loop is string iteration. We can also use for of loop
 A Set is a collection of unique values, meaning each element can only appear once in the Set. The for of loop allows you to iterate directly over the elements of a Set in the order they were inserted. Let's say we create a Set called uniqueNumbers with five unique values. The for of loop iterates over the elements of the Set, providing each unique value in the order they were added.
 
 
+## For Loop
+
+The for loop in JavaScript is a control flow statement used to execute a block of code repeatedly based on a specified condition. It consists of three parts: initialization, condition, and iteration. The initialization sets up a loop control variable or initializes variables used in the loop, the condition is checked before each iteration to determine if the loop should continue, and the iteration updates the loop control variable after each iteration. The loop's block of code executes repeatedly as long as the condition remains true. The for loop is commonly uses for tasks such as iterating over arrays, generating sequences of numbers, and performing repeated actions.
+
+1. Working with multi-dimensional arrays
+
+You can use nested for loops to work with multi-dimensional arrays or perform complex iterations. It is difficult to deal with multi dimensional arrays. So, we have for loop to make it easy for us. We can just perform nested for loops to iterate over the complex multi-dimensional arrays.
+ 
+2. Performing repeated Tasks
+
+Let's say you have to perform a tasks repeatedy. For exmaple, you want to write iteration 1 to iteration 10. One case could be to write it manually but that would take a lot of effort and who know when it becomes million from 10. So, we use for loop to do thos for us we just have to initialize a variable define a conditon and increment the variable with each loop and we do it using two lines.
+
+
+3. Data manipulation and filtering
+
+For loops can also be used to filter and manipulate data. For example, let's say you have an array of numbers and you want to square them. It is easy to do with for loop as you can just multiply each element by itself and made a new array. 
+
+
+## every
+
+every is a javascript function that accepts a function in its parameter which is executed for every element of the array. Every function returns a true or false statement. If the function  returns true for every element of the array the every function returns true. But if the function returns false for even one element of the array, every function returns false. Every function does not change the original array and it does not work on empty arrays.
+
+
+1. Check a condition
+
+We can check a condition for all the elements of the array. For example, if i want to check that if an array has all the integer elements or not. I can check this using every function. I just have to define a condition in function to check integer and we will be able to find out if all the elements of the array are integers or not.
+
+2. Validation
+
+We can also use every function to perform validation. Let's say you have made a form and now you want to ensure that every input coming to it is a valid input so you define an every function that ensures the validation of each input.
+
+3. Permission
+
+every() can be used to check all the required permissions. Let's say a you have defined the required permission as read, write and now a user comes with permissions read, write and delete. SO now every() would check if user has the required permissions and return true if he/she has the required permissions.
