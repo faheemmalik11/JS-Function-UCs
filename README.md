@@ -4,6 +4,7 @@
 * [Reduce](#reduce)
 * [Filter](#filter)
 * [For In Loop](#for-in-loop)
+* [For Of Loop](#for-of-loop)
 
 
 ## Map
