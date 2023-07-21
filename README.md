@@ -2,6 +2,7 @@
 
 * [Map](#map)
 * [Reduce](#reduce)
+* [Filter](#filter)
 
 
 ## Map
@@ -42,3 +43,18 @@ If you have an array of arrays and you want to flatten them to a single array, r
 Reduce can also be used to remove duplicates from an array. Let's say we have an array of numbers with duplicated. We will give give two parameter, first one is  accumulated  which would be initialized as an empty array and second is current value in the array of numbers. We will check if the accumulated array contains current value or not. If not it will push current value to it and if it contains it will not. At last it will return accumulated array.
 
 
+## Filter 
+
+Filter is used to check the elements of an array based on a function which have a condition. So, if the elements of the array fulfill that condition, they would be returned otherwise, they will not be returned. Filter accepts a function which accepts a currentValue parameter, an optional index parameter and another optional array parameter. Filter does not changes the original array.
+
+1. Removing invalid elements from the array
+
+The most common usage of filter is to remove invalid elements from the array. We define a condition on the basis of which we remove the invalid elements from the array. Like, if we an array of person objects. and person have name and age. So, we will check for only those persons who does not have undefined, null or NaN values in their age and we will have a filtered array of people.
+
+2. Filter an array
+
+Another common use for filter is obviously to filter the arrays. Let's say we have an array of people with multiple ages some greater than 18 and some lower than 18. We want only those people who are adults, meaning 18 or greater. So, we will perform a fiter operation on people with a condition to return only those people whose age are greater or equal to 18.
+
+3.  Have a reference that includes only specific property type
+
+We can also filter an array of objects to only include those with a specific property value. Let's say you are building an eCommerce store, and you want to display products that are in specific categories, you can use the filter method. Also, you can sort company data of their employees according to specific departments.
