@@ -78,5 +78,22 @@ Let's suppose you want to add str to all the values of an object. It will be too
 We can use for in loop to iterate over object properties. It is very easy to do with for in loop. You just have to declare a key and give object over to which we have to iterate and it will be performed.
 
 
+## For Of Loop
+
+In JavaScript, the forof loop is used to iterate over the elements of an iterable object, such as arrays, strings, sets, maps, and other data structures that implement the iterable protocol. Unlike the forin loop, which iterates over object keys, the forof loop provides a simpler and more concise way to work with arrays, objects, strings, sets, and maps.
+
+
+1. String Iteration
+
+For of loops can be used to iterate over a string. Many of the loops do not iterate over a string but for of loop provides support for it. We can iterate over a string and we may do something in the loop. Maybe, define a condition for specific iteration.
+
+
+2. Array Iteration
+
+Another use case of for of loop is string iteration. We can also use for of loop to perform an iteration over an array. Unlike, for in loop we do not have to deal with the indices od the array in for off loop.
+
+3. Set iteration
+
+A Set is a collection of unique values, meaning each element can only appear once in the Set. The for of loop allows you to iterate directly over the elements of a Set in the order they were inserted. Let's say we create a Set called uniqueNumbers with five unique values. The for of loop iterates over the elements of the Set, providing each unique value in the order they were added.
 
 
