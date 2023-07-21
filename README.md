@@ -3,6 +3,7 @@
 * [Map](#map)
 * [Reduce](#reduce)
 * [Filter](#filter)
+* [For In Loop](#for-in-loop)
 
 
 ## Map
@@ -58,3 +59,24 @@ Another common use for filter is obviously to filter the arrays. Let's say we ha
 3.  Have a reference that includes only specific property type
 
 We can also filter an array of objects to only include those with a specific property value. Let's say you are building an eCommerce store, and you want to display products that are in specific categories, you can use the filter method. Also, you can sort company data of their employees according to specific departments.
+
+
+## For In Loop
+
+for in iterates over properties of objects while in array it iterates over indexes. Which means is that in an object, we have keys of an object in for in loop. so if there's an object person with name:'John' , age:20. My for in loop on this persone will first iterate over name then age. While if i have an array it will loop over it's indexes. If we change some value in for loop of an object or array, it will be changed in the original object or array. It returns all the properties in an array or object.
+
+1. Search 
+
+We can use for in loop to perform a search operation on the properties of an object. For example, In a large data object, if i want to know if a property exist in the object or not, we can use the in to check for it. In applies the same concept as for in loop.
+
+2. Add something to multiple properties at once
+
+Let's suppose you want to add str to all the values of an object. It will be too difficult to do this manually. Instead, you can use for in loop to add it to all the values of attributes of an object by writing one line only.
+
+3. Iterating over object properties
+
+We can use for in loop to iterate over object properties. It is very easy to do with for in loop. You just have to declare a key and give object over to which we have to iterate and it will be performed.
+
+
+
+
